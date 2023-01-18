@@ -1,0 +1,1 @@
+코드 설명 : https://synonymous-island-173.notion.site/MOMENTUM-b19720033b734b7d8b730d4f865825d4
