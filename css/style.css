@@ -24,19 +24,24 @@ body {
 .xbtn {
     background-color: transparent;
     border: none;
-    margin-left: 10px;
 }
 
 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     list-style: none;
+    margin: 30px 0px 30px 0px;
+    padding: 0;
 }
 
-li::before {
-    content: "✅";
-    margin-right: 20px;
+span {
+    margin: 30px;
 }
 
-input {
+.text {
     height: 20px;
     width: 300px;
     border-radius: 5px;
@@ -75,6 +80,12 @@ img {
     border: 1px solid black;
     padding: 10px;
     border-radius: 5px;
+}
+
+#quote {
+    position: relative;
+    bottom: 20px;
+    margin-top: 30px;
 }
 
 .inner {

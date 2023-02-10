@@ -24,6 +24,9 @@ function addTodo(newTodo) {
     button.innerText = "❌";
     button.classList.add("xbtn");
     button.addEventListener("click", deleteTodo);
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    li.appendChild(checkbox);
     li.appendChild(span);
     li.appendChild(button);
     todoList.appendChild(li);
@@ -31,6 +34,9 @@ function addTodo(newTodo) {
 
 function todoSubmit(event) {
     event.preventDefault();
+    if (todoInput.value === "") {
+        return;
+    }
     const newTodo = todoInput.value;
     todoInput.value = "";
     const newTodoObj = {
